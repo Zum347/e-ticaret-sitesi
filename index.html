@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticaret</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header-->
+<header>
+<h1>E-Ticaret</h1>
+<input type="text" placeholder="ürün ismi giriniz" />
+<div>    
+<button id="open-button">sepet</button>
+<button>kayıt ol</button>
+<button>giriş yap</button> 
+</div>
+</header>
+<!--Ana kısım-->
+<main>
+    <div class="category-wrapper">
+     <h2>KATEGORİLER</h2>
+     <div class="categories" id="category-list">
+     </div>
+    </div>
+
+   <div class="product-wrapper">
+   <h2>ÜRÜNLER</h2>
+   <div class="products" id="products">
+   </div>
+   </div>
+
+   <!--Modal-->
+
+<div id="modal" class="modal-wrapper">
+  <div class="modal">
+  <img id="close-button" src="image/close.png" alt="">
+  <div class="modal-list"></div>
+  <div class="total">Toplam: <span id="total-price">0</span>₺</div>
+  </div>
+</div>
+</main>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
